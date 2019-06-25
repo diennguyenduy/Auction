@@ -36,6 +36,7 @@
         <img v-show="isLoad" src="https://media.giphy.com/media/2A6xoqXc9qML9gzBUE/giphy.gif">
       </div>
     </div>
+
     <div v-show="isShow">
       <hr>
       <b-card-group columns class="mb-3">
@@ -106,6 +107,7 @@ export default {
       createStatus: "CREATE"
     };
   },
+
   beforeMount() {
     // get auctionBox method: returnAllAuctions()
     auctionBox.methods
@@ -117,6 +119,7 @@ export default {
         this.amount = auctions.length;
       });
   },
+
   methods: {
     createAuction() {
       // get accounts
@@ -207,7 +210,7 @@ export default {
 
 <style>
 body {
-  background: -moz-linear-gradient(right, #ffecd2 , #fcb69f);
+  background: -moz-linear-gradient(right, #ffecd2, #fcb69f);
 }
 
 #app {
